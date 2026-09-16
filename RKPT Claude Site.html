@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RKPT TECH LTD — Business. Technology. Compliance. Growth.</title>
+<meta name="description" content="RKPT TECH LTD helps entrepreneurs, startups and established companies establish, operate and expand across international markets — business setup, compliance and technology across seven global hubs.">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0A1830;
+    --navy-2:#0E2140;
+    --red:#D62B2B;
+    --red-dim:#B82323;
+    --paper:#FFFFFF;
+    --paper-alt:#F5F6F8;
+    --ink:#0F1420;
+    --slate:#5B6472;
+    --line:#E3E4E9;
+    --line-dark:rgba(255,255,255,.14);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0; font-family:'Inter',sans-serif; color:var(--ink); background:var(--paper); line-height:1.55; -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{ font-family:'Archivo',sans-serif; font-weight:800; line-height:1.08; margin:0; color:var(--navy); }
+  p{ margin:0; }
+  a{ color:inherit; text-decoration:none; }
+  img{ max-width:100%; display:block; }
+  ul{ margin:0; padding:0; list-style:none; }
+  .wrap{ max-width:1200px; margin:0 auto; padding:0 28px; }
+  @media (max-width:640px){ .wrap{ padding:0 20px; } }
+  .mono{ font-family:'IBM Plex Mono',monospace; }
+
+  /* Buttons */
+  .btn{ display:inline-flex; align-items:center; gap:8px; justify-content:center; padding:14px 24px; font-weight:700; font-size:.9rem; letter-spacing:.02em; text-transform:uppercase; border-radius:6px; border:1.5px solid transparent; cursor:pointer; transition:background .2s ease,color .2s ease,border-color .2s ease; white-space:nowrap; }
+  .btn-primary{ background:var(--red); color:#fff; }
+  .btn-primary:hover{ background:var(--red-dim); }
+  .btn-outline{ background:transparent; color:var(--navy); border-color:var(--navy); }
+  .btn-outline:hover{ background:var(--navy); color:#fff; }
+  .btn-outline-white{ background:transparent; color:#fff; border-color:rgba(255,255,255,.45); }
+  .btn-outline-white:hover{ background:#fff; color:var(--navy); }
+  .btn:focus-visible{ outline:2px solid var(--red); outline-offset:3px; }
+
+  /* Eyebrow */
+  .eyebrow{ display:inline-flex; align-items:center; gap:8px; font-family:'IBM Plex Mono',monospace; font-size:.72rem; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--red); margin-bottom:16px; }
+  .eyebrow::before{ content:""; width:7px; height:7px; background:var(--red); border-radius:50%; display:inline-block; }
+  .band-dark .eyebrow, .final-cta .eyebrow{ color:#FF7A6B; }
+
+  /* Utility bar */
+  .utility-bar{ background:var(--navy); color:#93A0BC; font-size:.76rem; }
+  .utility-row{ display:flex; align-items:center; justify-content:space-between; height:34px; font-family:'IBM Plex Mono',monospace; letter-spacing:.02em; }
+  .utility-row a{ color:#C6CEDE; }
+  .utility-row a:hover{ color:#fff; }
+  @media (max-width:640px){ .utility-row span:first-child{ display:none; } }
+
+  /* Header */
+  header{ position:sticky; top:0; z-index:100; background:rgba(255,255,255,.96); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
+  .nav-row{ display:flex; align-items:center; justify-content:space-between; height:72px; gap:20px; }
+  .logo{ display:flex; align-items:center; gap:10px; }
+  .logo-mark{ height:24px; width:auto; }
+  .logo-word{ font-family:'Archivo',sans-serif; font-weight:800; font-size:1.02rem; color:var(--navy); letter-spacing:-.01em; white-space:nowrap; }
+  nav.primary-nav{ display:flex; gap:26px; }
+  nav.primary-nav a{ font-size:.86rem; font-weight:600; color:var(--ink); }
+  nav.primary-nav a:hover{ color:var(--red); }
+  .nav-right{ display:flex; align-items:center; gap:18px; }
+  .nav-phone{ font-family:'IBM Plex Mono',monospace; font-size:.82rem; font-weight:600; color:var(--navy); }
+  @media (max-width:980px){ .nav-phone{ display:none; } }
+  .hamburger{ display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:6px; }
+  .hamburger span{ width:22px; height:2px; background:var(--navy); display:block; }
+  @media (max-width:900px){ nav.primary-nav{ display:none; } .hamburger{ display:flex; } }
+  .mobile-menu{ display:none; flex-direction:column; background:#fff; border-bottom:1px solid var(--line); }
+  .mobile-menu.open{ display:flex; }
+  .mobile-menu a{ padding:14px 20px; border-top:1px solid var(--line); font-size:.92rem; font-weight:600; }
+
+  /* Hero */
+  .hero{ padding:76px 0 70px; }
+  .hero-inner{ max-width:760px; }
+  .hero h1{ font-size:clamp(2.1rem,5vw,3.3rem); }
+  .hero h1 .line-outline{ display:block; -webkit-text-stroke:1.5px var(--navy); color:transparent; }
+  .hero p.lead{ margin-top:22px; font-size:1.05rem; color:var(--slate); max-width:56ch; }
+  .hero-ctas{ margin-top:30px; display:flex; gap:14px; flex-wrap:wrap; }
+  .hero-media{ margin-top:52px; position:relative; }
+  .hero-photo{ height:340px; border-radius:18px; background:linear-gradient(135deg,var(--navy) 0%,#132C52 55%,#0A1830 100%); position:relative; overflow:hidden; }
+  .hero-photo svg{ position:absolute; inset:0; width:100%; height:100%; }
+  @media (max-width:640px){ .hero-photo{ height:220px; } }
+  .hero-caption{ display:flex; align-items:center; justify-content:space-between; gap:16px; margin-top:16px; font-family:'IBM Plex Mono',monospace; font-size:.75rem; letter-spacing:.04em; color:var(--slate); text-transform:uppercase; flex-wrap:wrap; }
+
+  /* Hub quick list */
+  section.tight{ padding:60px 0; }
+  .hub-quick{ display:flex; flex-direction:column; gap:10px; }
+  .hub-quick-row{ display:flex; align-items:center; justify-content:space-between; gap:16px; padding:16px 20px; border:1.5px solid var(--line); border-radius:10px; transition:border-color .15s ease, background .15s ease; }
+  .hub-quick-row:hover{ border-color:var(--navy); background:var(--paper-alt); }
+  .hub-quick-left{ display:flex; align-items:center; gap:14px; }
+  .hub-flag{ width:34px; height:34px; border-radius:50%; background:var(--paper-alt); display:flex; align-items:center; justify-content:center; font-size:1.1rem; flex:0 0 auto; }
+  .hub-quick-row h3{ font-size:1rem; font-weight:700; }
+  .hub-quick-tag{ font-family:'IBM Plex Mono',monospace; font-size:.74rem; color:var(--slate); letter-spacing:.02em; }
+  .hub-quick-row .chev{ color:var(--red); font-weight:700; flex:0 0 auto; }
+
+  /* Section header pattern */
+  .section-head{ max-width:640px; margin-bottom:40px; }
+  .section-head h2{ font-size:clamp(1.7rem,3.2vw,2.4rem); }
+  .section-head p{ margin-top:16px; color:var(--slate); font-size:1rem; max-width:58ch; }
+  .section-head .view-all{ display:inline-block; margin-top:18px; font-family:'IBM Plex Mono',monospace; font-size:.78rem; font-weight:600; letter-spacing:.03em; color:var(--red); text-transform:uppercase; }
+  .section-head .view-all:hover{ color:var(--red-dim); }
+  .band-alt{ background:var(--paper-alt); }
+  .band-dark{ background:var(--navy); color:#fff; }
+  .band-dark .section-head h2{ color:#fff; }
+  .band-dark .section-head p{ color:#AAB4C8; }
+
+  /* Hub detail cards */
+  .hub-cards{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+  @media (max-width:980px){ .hub-cards{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:640px){ .hub-cards{ grid-template-columns:1fr; } }
+  .hub-card{ border:1.5px solid var(--line); border-radius:12px; padding:24px; display:flex; flex-direction:column; gap:14px; background:#fff; }
+  .hub-card-top{ display:flex; align-items:flex-start; justify-content:space-between; gap:10px; }
+  .hub-card-flag{ width:38px; height:38px; border-radius:50%; background:var(--paper-alt); display:flex; align-items:center; justify-content:center; font-size:1.25rem; }
+  .hub-card-tag{ font-family:'IBM Plex Mono',monospace; font-size:.68rem; color:var(--slate); text-align:right; }
+  .hub-card h3{ font-size:1.2rem; }
+  .hub-card .hub-role{ font-size:.82rem; color:var(--red); font-weight:600; margin-top:2px; display:block; }
+  .hub-kv{ border-top:1px solid var(--line); padding-top:12px; display:flex; flex-direction:column; gap:9px; }
+  .hub-kv-row{ display:flex; justify-content:space-between; gap:10px; font-size:.86rem; }
+  .hub-kv-row .k{ color:var(--slate); }
+  .hub-kv-row .v{ font-weight:600; color:var(--navy); text-align:right; }
+  .hub-card-footer{ display:flex; align-items:center; justify-content:space-between; border-top:1px solid var(--line); padding-top:14px; margin-top:2px; }
+  .hub-card-footer .cities{ font-family:'IBM Plex Mono',monospace; font-size:.72rem; color:var(--slate); }
+  .hub-card-footer .details{ font-size:.82rem; font-weight:700; color:var(--red); }
+  .hub-card-footer .details:hover{ color:var(--red-dim); }
+
+  /* Practice area list */
+  .practice-list{ border-top:1px solid var(--line); }
+  .practice-item{ border-bottom:1px solid var(--line); padding:28px 0; display:grid; grid-template-columns:52px 1fr; gap:22px; }
+  @media (max-width:640px){ .practice-item{ grid-template-columns:40px 1fr; gap:16px; } }
+  .practice-icon{ width:44px; height:44px; border-radius:10px; background:var(--paper-alt); display:flex; align-items:center; justify-content:center; }
+  .practice-icon svg{ width:22px; height:22px; stroke:var(--navy); }
+  .band-dark .practice-icon{ background:rgba(255,255,255,.08); }
+  .band-dark .practice-icon svg{ stroke:#fff; }
+  .practice-content h3{ font-size:1.12rem; }
+  .practice-content p{ margin-top:8px; color:var(--slate); font-size:.94rem; max-width:64ch; }
+  .band-dark .practice-content p{ color:#AAB4C8; }
+  .practice-toggle{ background:none; border:none; padding:0; margin-top:12px; cursor:pointer; font-family:'IBM Plex Mono',monospace; font-size:.75rem; font-weight:600; letter-spacing:.03em; color:var(--red); text-transform:uppercase; display:inline-flex; align-items:center; gap:6px; }
+  .practice-body{ max-height:0; overflow:hidden; transition:max-height .25s ease; }
+  .practice-item.open .practice-body{ max-height:500px; margin-top:14px; }
+  .practice-body ul{ columns:2; column-gap:28px; }
+  @media (max-width:640px){ .practice-body ul{ columns:1; } }
+  .practice-body li{ font-size:.88rem; color:var(--slate); padding:5px 0 5px 14px; position:relative; break-inside:avoid; }
+  .practice-body li::before{ content:"—"; position:absolute; left:0; color:var(--red); }
+  .band-dark .practice-body li{ color:#AAB4C8; }
+  .approach-line{ margin-top:8px; font-size:.82rem; color:var(--navy); font-weight:700; font-family:'IBM Plex Mono',monospace; }
+  .band-dark .approach-line{ color:#fff; }
+  .practice-cta{ margin-top:36px; }
+
+  /* Blueprint tool */
+  .blueprint-grid{ display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start; }
+  @media (max-width:900px){ .blueprint-grid{ grid-template-columns:1fr; gap:36px; } }
+  .checklist{ margin-top:24px; display:flex; flex-direction:column; gap:12px; }
+  .checklist li{ display:flex; align-items:center; gap:10px; font-size:.92rem; color:var(--slate); }
+  .checklist li::before{ content:"✓"; width:20px; height:20px; border-radius:50%; background:var(--red); color:#fff; font-size:.7rem; display:flex; align-items:center; justify-content:center; flex:0 0 auto; }
+  .blueprint-card{ border:1.5px solid var(--line); border-radius:14px; padding:28px; background:var(--paper-alt); }
+  .blueprint-card .field{ margin-bottom:16px; }
+  .blueprint-card label{ display:block; font-size:.76rem; font-weight:700; text-transform:uppercase; letter-spacing:.03em; color:var(--navy); margin-bottom:6px; font-family:'IBM Plex Mono',monospace; }
+  .blueprint-card select{ width:100%; padding:12px 14px; border:1.5px solid var(--line); border-radius:8px; background:#fff; font-family:inherit; font-size:.92rem; }
+  .blueprint-result{ margin-top:18px; padding:18px; border-radius:10px; background:#fff; border:1px dashed var(--line); font-size:.88rem; color:var(--slate); display:none; }
+  .blueprint-result.show{ display:block; }
+  .blueprint-result h4{ font-size:.95rem; margin-bottom:10px; }
+  .blueprint-result ul{ display:flex; flex-direction:column; gap:6px; }
+  .blueprint-result li{ padding-left:14px; position:relative; }
+  .blueprint-result li::before{ content:"—"; position:absolute; left:0; color:var(--red); }
+
+  /* Stats strip */
+  .stats-grid{ display:grid; grid-template-columns:repeat(4,1fr); border-top:1.5px solid var(--line-dark); border-left:1.5px solid var(--line-dark); }
+  @media (max-width:760px){ .stats-grid{ grid-template-columns:repeat(2,1fr); } }
+  .stat-item{ padding:32px 26px; border-right:1.5px solid var(--line-dark); border-bottom:1.5px solid var(--line-dark); }
+  .stat-item .num{ font-family:'Archivo',sans-serif; font-weight:900; font-size:2.2rem; color:#fff; }
+  .stat-item .cap{ margin-top:8px; font-family:'IBM Plex Mono',monospace; font-size:.72rem; letter-spacing:.04em; text-transform:uppercase; color:#8592AB; }
+
+  /* Journey */
+  .journey-grid{ display:grid; grid-template-columns:repeat(5,1fr); gap:0; }
+  @media (max-width:900px){ .journey-grid{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:520px){ .journey-grid{ grid-template-columns:1fr; } }
+  .journey-step{ padding:22px 20px 22px 0; border-top:2px solid var(--line-dark); }
+  .journey-step .jnum{ font-family:'IBM Plex Mono',monospace; font-size:1.3rem; color:var(--red); font-weight:600; }
+  .journey-step h4{ color:#fff; font-size:.98rem; margin-top:10px; }
+  .journey-step p{ color:#AAB4C8; font-size:.86rem; margin-top:8px; }
+
+  /* Why grid */
+  .why-grid{ display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid var(--line); border-left:1px solid var(--line); }
+  @media (max-width:900px){ .why-grid{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:520px){ .why-grid{ grid-template-columns:1fr; } }
+  .why-item{ padding:28px 24px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .why-item h4{ font-size:.98rem; margin-bottom:8px; }
+  .why-item p{ font-size:.88rem; color:var(--slate); }
+
+  /* Who we serve */
+  .serve-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px 26px; }
+  @media (max-width:760px){ .serve-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:480px){ .serve-grid{ grid-template-columns:1fr; } }
+  .serve-item{ display:flex; align-items:center; gap:10px; padding:11px 0; border-bottom:1px solid var(--line); font-size:.94rem; font-weight:600; }
+  .serve-item .mark{ width:6px; height:6px; background:var(--red); flex:0 0 auto; border-radius:50%; }
+
+  /* About */
+  .about-grid{ display:grid; grid-template-columns:1fr 1fr; gap:56px; }
+  @media (max-width:860px){ .about-grid{ grid-template-columns:1fr; gap:32px; } }
+  .about-grid p{ color:var(--slate); font-size:.98rem; margin-bottom:16px; }
+  .values-list li{ padding:12px 0; border-top:1px solid var(--line); font-size:.92rem; }
+  .values-list li:last-child{ border-bottom:1px solid var(--line); }
+  .values-list b{ color:var(--navy); }
+  .mission-list li{ padding:9px 0 9px 18px; position:relative; color:var(--slate); font-size:.92rem; }
+  .mission-list li::before{ content:"—"; position:absolute; left:0; color:var(--red); }
+
+  /* Trust / testimonial placeholder */
+  .trust-card{ border:1.5px dashed var(--line); border-radius:14px; padding:34px; text-align:left; max-width:640px; }
+  .stars{ color:var(--red); letter-spacing:2px; font-size:.95rem; margin-bottom:14px; }
+  .trust-card p.quote{ font-family:'Archivo',sans-serif; font-weight:600; font-size:1.15rem; color:var(--navy); line-height:1.4; }
+  .trust-card .who{ margin-top:18px; font-size:.85rem; color:var(--slate); font-family:'IBM Plex Mono',monospace; }
+
+  /* Final CTA */
+  .final-cta{ background:var(--red); color:#fff; }
+  .final-cta h2{ color:#fff; font-size:clamp(1.8rem,4vw,2.5rem); max-width:20ch; }
+  .final-cta p{ color:#FDE1DD; margin-top:16px; max-width:56ch; font-size:1rem; }
+  .final-cta .hero-ctas{ margin-top:28px; }
+  .final-cta .btn-primary{ background:#fff; color:var(--red); }
+  .final-cta .btn-primary:hover{ background:#F4EAE8; }
+  .final-cta .btn-outline-white:hover{ background:#fff; color:var(--red); }
+
+  /* Contact */
+  .contact-wrap{ display:grid; grid-template-columns:1.1fr .9fr; gap:56px; }
+  @media (max-width:900px){ .contact-wrap{ grid-template-columns:1fr; gap:36px; } }
+  form.enquiry{ display:grid; grid-template-columns:1fr 1fr; gap:16px 18px; }
+  @media (max-width:560px){ form.enquiry{ grid-template-columns:1fr; } }
+  form.enquiry .full{ grid-column:1/-1; }
+  .field label{ display:block; font-size:.76rem; font-weight:700; text-transform:uppercase; letter-spacing:.03em; color:var(--navy); margin-bottom:7px; font-family:'IBM Plex Mono',monospace; }
+  .field input, .field select, .field textarea{ width:100%; padding:12px 14px; font-family:'Inter',sans-serif; font-size:.94rem; border:1.5px solid var(--line); border-radius:8px; background:#fff; color:var(--ink); }
+  .field input:focus, .field select:focus, .field textarea:focus{ outline:none; border-color:var(--red); }
+  .field.checkbox{ display:flex; align-items:flex-start; gap:10px; }
+  .field.checkbox input{ width:auto; margin-top:4px; }
+  .field.checkbox label{ font-weight:400; text-transform:none; font-size:.84rem; color:var(--slate); font-family:'Inter',sans-serif; }
+  .contact-direct h3{ font-size:1.15rem; margin-bottom:16px; }
+  .direct-list a{ display:flex; align-items:center; justify-content:space-between; padding:17px 0; border-top:1px solid var(--line); font-weight:700; font-size:.94rem; }
+  .direct-list a:last-child{ border-bottom:1px solid var(--line); }
+  .direct-list a:hover{ color:var(--red); }
+  .form-submit{ grid-column:1/-1; margin-top:6px; }
+
+  /* Footer */
+  footer{ background:var(--navy); color:#93A0BC; padding:64px 0 26px; }
+  .footer-top{ display:flex; flex-direction:column; gap:16px; max-width:520px; margin-bottom:48px; }
+  footer .flogo-mark{ height:28px; width:auto; }
+  .footer-desc{ font-size:.88rem; color:#8592AB; line-height:1.7; }
+  .badges{ display:flex; gap:10px; flex-wrap:wrap; margin-top:6px; }
+  .badges span{ font-family:'IBM Plex Mono',monospace; font-size:.68rem; padding:6px 12px; border:1px solid var(--line-dark); border-radius:20px; color:#AAB4C8; letter-spacing:.02em; }
+  .footer-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:36px; }
+  @media (max-width:760px){ .footer-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:520px){ .footer-grid{ grid-template-columns:1fr; } }
+  footer h4{ color:#fff; font-size:.76rem; letter-spacing:.05em; text-transform:uppercase; margin-bottom:16px; font-family:'IBM Plex Mono',monospace; font-weight:600; }
+  footer li{ margin-bottom:11px; font-size:.86rem; }
+  footer a:hover{ color:#fff; }
+  .disclaimer{ margin-top:48px; padding-top:28px; border-top:1px solid var(--line-dark); font-size:.76rem; color:#6E7A93; line-height:1.7; }
+  .disclaimer a{ text-decoration:underline; }
+  .bottom-row{ margin-top:24px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; font-size:.76rem; color:#5E6A83; }
+  .bottom-row a{ margin-right:14px; }
+
+  /* Floating mobile CTA */
+  .float-cta{ display:none; position:fixed; bottom:0; left:0; right:0; z-index:200; padding:12px 16px; background:#fff; border-top:1px solid var(--line); box-shadow:0 -6px 18px rgba(0,0,0,.08); }
+  .float-cta .btn{ width:100%; }
+  @media (max-width:760px){ .float-cta{ display:block; } body{ padding-bottom:70px; } }
+
+  a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible{ outline:2px solid var(--red); outline-offset:2px; }
+  @media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } *{ transition:none !important; } }
+</style>
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="wrap utility-row">
+    <span>GLOBAL BUSINESS &amp; TECHNOLOGY SOLUTIONS</span>
+    <a href="mailto:info@rkpttech.com">info@rkpttech.com &nbsp;·&nbsp; +44 (0) 20 0000 0000</a>
+  </div>
+</div>
+
+<header>
+  <div class="wrap nav-row">
+    <a href="#home" class="logo">
+      <img class="logo-mark" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAooAAADvCAYAAAB10vVMAAAe80lEQVR42u3de7ynU6HH8c+eGzYz7iO3UVGi3M7JpTgKvTjSSyqppBeRksNxS0mNEyeJcguHSjcl5XKig9MFNYoOoqNESiIRxmUGM8bsmdnnj9+zj59tm73371nredZ6ns/79dqvuT7r9/zWWs9a3+feN23GNkiSJEnDTbAKJEmSZFCUJEmSQVGSJEkGRUmSJBkUJUmSZFCUJEmSQVGSJEkGRUmSJBkUJUmSZFCUJEmSQVGSJEkGRUmSJBkUJUmSJIOiJEmSDIqSJEkyKEqSJMmgKEmSJIOiJEmSDIqSJElKyaRIZQ5YtdmaBRwN3NKS7ztYcvllgIUVfyZAn101WF3GruNBm6kylwOzgS8Dt9oOaqHjgc+ELDDGEcVX2E5ZexNwczGodv8cZtWMaKFV0MiQ+HNDYpb2AA4Efj3CGCa1wZahC4wRFNe2nRrpDAfeEU2xChoXEj8B7GBIlJShi0MXGOPU87K2Uysn67aeCvWIYrNC4tHAFw2JkjK1YegCYxxRXGA7tXbyHgRusyqUaUi81JAoSfGD4kSrtdW26AqN61gdyiQkfh54tyFRkuIHRe941pAHiolzO6tCCQewWcAnDYmSHCurCYqeetZwvyg678+tCiUWwG4D3mxIlNQQi3IIih5R1Et5UzGh/qtVoQQC2CLgHw2JkhpkskFRTXBmMbl6PavqCmA/CzSgPmczSWqyGI/HMShqrIYOkfuWEVUZEhcBOya+jpKUhBhHFJ+2WtXDhOukq6oC2OQM1lGSevFQDkFxsu0kJ18l2gdCHL32hj1Jqdogh6A413ZSyaBwjdVgSAxsUaCQOAAsY1NJStT9OQTFGbaTStoJjy4aEsMKcabjGeJc1y1JoawUusBJOaykWh0eJgGLrQpDYgl9GayjJIXw6hyC4vXFr08B1wKPFXvzA8Wv84H+Efbyl3T9fq1RjgjM7/r9wuLXga7fz6Xz6JXFL/HrVDpHUyfSOY00sZhMBoty+kf5jkPfZfII60axfF/X+gwtMzDszyP9fvGwdpkw7N+Gvseyxb/1A1O61mdC8eukYX8/mTyvH10EvA24yu2/ke7JICT6JAdJufhQDkEx1OCs+hxD56HYayayPlcCtwBb2TSNchGwfuIh8Wbinm52rAxnb+DCRNfNdla2+qbN2MZa0Gh2A35InGta6x5wB2tYn8EE66FqN0UO/iHq53ZgU8NDtiYCBwFnGxal3k2wCjQGV/H86fk+Okcc6+K1Yvm7IIOQ+FNDYvYWA+d0jVt317w+jl0yKKo1Tu4afM9xwNU4nAZ8IPEAdj7wFkNi47yma9yabViUDIqqxiHFwLurA65G8XHgiMQD2HHAAYbExptetMXuhkVplEHLaxQV2BbAbVX24ZoHba9RHJvjixCWcgDbB/i2IbG1qg5w9gdlwSOKCu03xQB4sHvnKhyTQUjc15DYen3AKhV+3pVWuQyKarNzK5wcP2V1J2t34KTEA9hawDcNiQKeLNprpwo+azdgDatcye9BeepZFYl95G9D4I81rFcvb45py6nnlYqJN/UANpjBOqoeDwDrxJ6HrWalzCOKqmynhM67cmOp69EXk23aEW2QQUicbEjUKNYFVs58J1oyKCobU4FNGjbgrmizvsgawJ8yCGALDYkagzkVtKdhUQZFqXBH5EHXAbde/cDDGQQwjyQqtXbd1SpWimK9w9TJOg9/AL4BnFLToBurn2xI/W9haKt5LQ+JZcpf0LUDv7Sd+PldoXxSC/rUs8AjwP3AU8BlwCzgvprGrfOJ86zNqw3d5ooUd2hi3MzyXuAi2ypr1wM7AEsq+KwfAzvXuLGUHXxeVkxiVQ94KR61yuEonZNNsx0BnFHB5/wz8N9Wt0ExQR8GvhqywBinnufZTtnbns6dvIPFzycjftYuwD2ZhRYZEpWm07vGrUHgrZE+50fAela3EvR06AJjBMWJtlPjfK5r4I3hVcCtEco9tYK6GbB7GBKVrKuKtr8sQtl/BZazipWY4AdeYgTFNW2nxoeCwQgD5OsjrOuRNpch0ZAo4J2RdnYXRBq7pF4FfxJHjKD4mO3UCvMjDLoxrrszJOQZEifZ/orYb0Nef30rsJ3Vqqby8TgKMeiGnIxze7TIxBa3e8yQuDjxdVTehp66EOrylBuA71qtSkDwl0AYFBUyOExNNCzGDAwDLW3rWNY3JKpCRwbsK++3OmVQlJbuKXp733IVYTHWkcq2BcWYAWw14F5Domrq1yGuu/Zh6zIoOnFqFK8KOFEfHXC9Yj0Tsk39fTByv3nckKgazQduNyzKoGhQVD6h4osZfM8B27O0NQjzSAdDosraNFA/eptVqZr05xAUF9tOCjhx9yW2PrZjWC8HHrVt1bA+f5VVqJp4RFGtDBmfthobGxLvNySqoX3fU9CqwxSDoto44J6YcPCZbLv15AOGRLVgG3iHVaiKZXFEcYHtpBbtnQ/YXuN2JPAdQ6IyUeYlEpdbfarYvByC4ittJ0Wa2EPdueyF5vUFsKOB0w2JysiqwEEN3MlVMwV/S1DftBnb5DbRKG/30HkUSt19qy9QeRN6KCO1m3yq2nYPAL4eoJy5wDQ3JVWsL9Htqi11aR2OTT/wbMgCJ0TsBP7k83NDhZ14A2B6ieUXOQ5EE3Mg/mygkPhcxJC4yLEgq59diXCaLdL2EXLH7h011/tNmY5vW7Rku3g2dMX5ZhZB51D1UCf7WgWf90iJZUNdqPtjm72ykHgBMDNAOY8T4Y6+CH1L1fgRsELX2LUg8+1krH7Q4LEipufcZAyKCuNDxaC7csMHm51t6kra4g/AvgHKuQdYJdI6Dh1JVN6WK9rxfZE/Z/sel1uxIfW8YabrvYabiEFRYc0pBt3XRPyM3Xpczkk9j5D4ELBRgHJ+D6wfcT09ktgs3yvGiP0jlT+rx+WeCrgOL6uxfu/ItF886aZhUFQcd0cMZlfW/N3OSTxo5RwSHwbWDlDOTcDGEdfTnY7m+kbE9u019IU6k/HXGut140z7w/puEgZFxZXahHpBgDIODlDG5pm2512Ry18zQBmzgK0MiQrQzpcFLnNqj8v9NNDn13kUPNfX9D7mpmBQVDUD7v2By+z1qNa+NkfPvkTcSwpCBLDb6f1aMEOihtuT8G9JaevjWhbanQyK0tK8HHg0cJkfybg+cru+7Xzg0MQD2JXApoZEBXY5sEkiO9ySQVGNFvrusfN6XO59CdRFToP+TDoPvU65Lq6h95ucnKQ1mjsIexr67Bq/y8dtznEZsAoMimpfQPpeAuswP5P2Ohc4IfH+MBPYyZCoyPYMWNa/9LhciBv5Tq6p/qbYhQyKUh0Tb64PQ80hKO5BuXfVVtEP9s8gyMqxaySv7GGZvTOuu1wfJ+URRYOianJmzXupF9b8/Rck3j57EvdNDiEm3MOI+0YgQ6JGEuoxL3/uYZmnDYqV8yYcg6JqcnjNn39IzZ+f8hHFDwKXJB7AjgDOMCSqBndZBa0Kih5RTCgoHk/nsQFlfnpRx2eqI9TNB71cnzan5u8+J9E2OQT4euIB7F3AaRWu4+9qGCfe6diUtDp3JO4MUMb2Nax3roFrrt09naDowNY+Vwcq55oMv/t6Ca7TvsBZiU+uGwGXVryOr3NSVSS9jF0h7lr2zmdlGRR9b2o7LdPS731/YutzMvDNxEPiMoQ5mhJzHQ2K7bFPgDJ6ORtyVYDP3c3mU45B0Vvn28kLhdMIiTGPMIQIYNsQ9wag1K5JXGC3TN6FVsG4eDCoZSbZiZSYDYG7x7nM48CqLa+32Jd8hAhgWwC/alFIBJjnJi2DYhI8ut8j73pWSG8LUEYvN2BcXuN3ngNcR+cRGQ8UgW0hL7wZ4Tngf4GLgc8H/vxtMgmJALe1LCQCLHFYyMKfApTRlp1Vc0PLTLIKFFCIa27e2MMy1xH31XRLsyKwwyh73FOAzYqfUKq6aSxEAFsWeLaFIXGkvqA0vTrANrU/8AWrUu4ZSOm5zipIOoC1NSRC+PeiK12nWAVJ8zr6hIKie9Cq2iNWQbIBbDCDdYxpvl1JSsJTVoFBUe3lszsNialaZHeSnCcMigZFyZBoSByJd1pKMihKDQk31qMhUVJ923dMHsRKKCi6B62qTbcKDImSpDyCohdvq2obWQWGRElSHkHRI4oyKOZjZUOi5Nzn9iiDoppsTaugJ9PpvFnGkCiVd7dVIIPi2MyxWlWxj1gF47YJMNuQKAHwmwBlHG41Js2DWAkFRamMs3tYxptZxmdr4A5DYiW80zIPmwco41qrUQZFKX5wuNlqjGrnQHVsSByb5e1yknI2ySpQYr5tFUTzJuD6xENi08YkjyhKMihKwLutgqRtBvw28ZC4NbDYplLFnq7pc0Ocqr7J5pNBUbm4uKbPPciqH9XawEOJh8TXAnc2sO69gD59KwQo4x09LLNjgM/9gs0ng6La5MgelpkZ4HO9u7bekLhdQ0OiQTF93w1UzuU1rf9lNY0Fjpkt4s0sSilEnN7DMmtZ/VmHxKOBGxpcdwvtPkl7n1XQmj5tuE0oKK5ktbbKblaBIbFHpwJfbHj9eddzO/v2aDbJuN6es70NitJ4XFnjZx8SoIwLbMJaBtYTgY+1oA6967n5ejlS9duMv69HyQ2KpXlNjkGiqsH2rACfu6/NWHlI/BXwaatYDe3fVbm+ps+da/cxKEptGWhVfdv+DXhji+rSI4rN7t91npHYq6bPnW8XMiiW5WHp5ns0cHkTe1hmD5shu5A4AKxrFatB/buXMxLfCfTZj9RUh87xLRPj8TieenagHa8lPSzzgwCf+y2bs7KQCDDFKlaD+/dYvd+mUE489ay6B9qDa/w++9mklU2ibX00hTvOze3fdfbpR21S5RwUHRibZ+eIQeLczMKlk6ghUfm4NVL/vrDH5f4n0OevYdOqKjFOPXvxtiEidoA4x2YxJGZijl2sFqfQeZh7LPv0uNzWDajbXC8h6cObMJMJih5RzF8fvV03WIXtDTCGRCdVjeAVdJ5PuEKi/foYm0g58hpFDdm4CA6DFYXEXgfbWTaVITEjnmGJ681d49a9FYTEJ0sse5J9ym0xR5OsglpsCqwHbAhsROd9xf3Fvw0AK3b9fvIIv87v+v/9xaTc37UxDP1M6fr7lKzd43IhJwFPQRgSNbL1gPushhGt0uNyywVch0U2Q89B0Uf7JBIUTe0vdj8ww2oA4OvAQz0u+7TVZ0hUFO44xe3boR5S7fXZqlyMU88GxY6ref6UiCHxeQf0uNyJVp0hUUGt3jVGKV7ffk3A9TjEpjCbNCEoLt/yOr2pGHh3tXsFHWyPtfoMiRlK9ea+WfgsvrHar+Tyd1mFSfDGsh556jks98zjBAnr1ZCYqxSviXJ7GruLKfcGp8EGbmcemWuZGEcU+1tYj6c6+EYb4A60+gyJGUvpDMsejlPjcgXwHqvhRaZmut7TbLreeETRvfPUg8RXrEJDYsZSGQ8/D3zC5hizw4EzE5obdrJPl7bYbm1QNCQ2L0hYv4ZEg2J5NwJvsCkq7dvPBV6n62wW1SXGqee2XDDqs6xe2s0BBtv3Wo1J812zY1P3pTgfNCRWHhK3DTwP+mIMNS4otsGOwESrYUSrEeZ9phdZlUl72CoYk7qvUfy6TTAm1xLuKPkvA69bamdWvJmlZWKcem7Dk8+vtetE2xtPcWDUS7eTp6DTnVTdjqodt2LUeZ99WnWLcURxoOF15uD7YvsbElsdFpUeH8w8ujMTD4mpHg02KLZMjCOKTQ6KDr4v9H3CXkv4F6s027DokcW0nGUVvKT9KPdsxKp2mA5ItP58cLVBsbT5Da4vB9+OfweOC1zmzsDLrVrDokr7hVUwos2A30bq+6GlvC3lup3PdxNIJyg2VduPJv4E2CVS2dsDP7aLGRYVxHZWwf/7APCdyH1earQY1yg29fqFNh5NPLuY+PsihkTovHdWzQmLav54mKovd41ZfZmGRHe2lBSPKOqaYnC9tMZ16ANWKnZc1ih+nVhMshOLn+5rX+eOMAl3/36l4teBYf8+9DPQ9f8njzCZD/2fAUa+5nZu1+9Hust/yTi///DPWNz19yP99I+yTfcXdThYlDWh63suS+c5l6cCR0acQJ3s6gmKocLLN4ETgQ2KP99a/LrasO+2fNHf+rv6/nRglWI7XK7oC0P/Z0Vg9WLZob9bvqu8JcAzwAI6pwrnFb8+Ufz9nCL83UG9b9poc0jMdft2p82gGNVASwaAOs0pfn3CqhjVMwHKOIrOK91i3XxmWMzT8Da7Z9ifZ1tF0ULiXlatUuQDt6sJ1E6YStGiyH3T09B5PQXCcWrp9o7Yp+8HLsmkHha6LRqA5OCrdpkB/DViWGzzNpDL5OQ4Ve9Oz8utYqUqxhHFxQ2rozKv4HLwVQ4eoHMaOtdJVh0n9LjcwVbdS1q7gv7rPFENX7vboxhHFPsbVkdH2U3UAqcATwJfiRgW2zghVjke7tHjcufa/Wvbwclxm1iSaXv6HMUe+Qq/0e1kN1FLfJXOHfA5T7xtDooz7MJBLKior25mVautQbFp3mgVqEUOAm40LAZT5evOVrT7lnJt0T+XqeCz1iHOW2Kq4M0sBkUbQ2q5bYHfGxazs8gq6Mn5RZ/csaLPuxB4MOP68hSuQdGgOMyTdhO10OsiT2aGxfDusgrG3QcHgQMq/MyTgX0yr7cB19ugqBf6vVWgllqHuK9XNCyGda3tMKqTugJi1fYCjrGbyqDYvNR+sROhWuzNJQKI20i113OdV2LZjza4DQa7fuoKauuSzwO12zbHq4ag2DTfciJUy73FsJjFpHp3iWX/oyHtsG5R593hsG59wN8cRlq109YoMZ6j2LQLXUN8n9jPkDOMaiyTVdmweBOwVcQ+3MTnLE7ObH2HxpLdgGuALYFH6Dw7b+Xi91OAZencHTy1+P0Enn++3pxhZU4s/n1i8X+f6Pr/U4typxZ/ngA8V/x5taL+lil+vw6wOvBa8nlerw/TlkFRQcLcV4CPlByMDItamnuADUqWsTVwJ7CRYXHMpmS63le5yRgSJfDU81jFvpvwwxEnXwlgfeC+AOVsHKicXnaoclT1EcU17eq1e2fDQ+Jkm7hdYhxRXNzAetq4ggnszpKDi0cVNZr1gN8Bm5Qs5xV0Tg/GOlrWpCOLVU+qD9vNa+VRRDWORxTTUjboOUhpNK8DfhqgnGWAZxLeFtpsS6ugcj9x/JVBUetmEhY/YFNpFG8Bvh+gnKmGxVHV8SiRX9vFK9UH7GI1yKCoKh9vsEWJZb9jU2kM9gIuDRQWU95xqtu8mj53Jbt4dIfhUUQZFDXCnmMVbstkPZW3dwEHZrBdzMm4jut6XNhcu3f0ueBLLf3u3sxiUNQojq3oc7xeUVX4CrBp4mFxReB2J1XHgEQCYtvrdXm7gUFRS3dShZ9VNix+1ubSGNweaPCPOYFuClxhUxkWDYjmBtngDr4vtE+JZWfaVBqjZzLYNnYHjrOpDIsVmWdAlAyKZQffpyv4nG87SagigwG3jViOB06wqRwHIppR1NcKVoUUJygOtKj+pgH7ZTCBO0moSWFxJvAZm6qnNrnTahjReTx/9PABq0OKGxTb5lsVDS5lJ/D1bCo1KCz+G/Apm2rcXgusZjUAcGNXOPyo1SEZFGMbOl1xVMTPeKTEsn8FfmgzqUFh8bN03qubshTPsDxetMs7WtanL+gap/uAbd3MJYNiHU7rGojeHrjs6cDaJZZ/u82jhoXFy4CP21Q9ubxrrPpzw77bX4BDu75fH7AvnlaWxm2SVRDVD4G9ge8GLPNvJSfePuK97WKApT837llguQCfM/whxguLzx4AlhR/N3nYT/c6PgSsQufB5iFfvTUbmEjnUTNT6NxJPLROE4GHgQfpvEKvrF8W33sr4l50Pxgo6MXsdyfTeUNMinf55/LMuQ1G+LsDgG2K/jUNWL3YWX2Uzru+Jxe/LikOOjwHLC6WXbVYrr/o+yEsKLanXwF3AdcDvylCoSSDYrYuChwUQ0zesSbtKRm2Tx03CoWo+38a9ue3Ale1OCx+uggpn0msf+X8FouvFT+SWsxTz9WIceqt7IQ7PcF1Uu+uJu4p3lxucDkksXbpt2uqYQasAoOi4pgWocxTSyw7GzjHsOhOScPC4lnAJxNqD9+LK4OiDIoOjGPyNJ1r1EI6suTysY6+HG9zGxZrXMfPkc5DuZ1UJRkUNWZrJjhxx5iwfc2aYbHudZxJ5+hit8dqaIf5dkVJBkXVPTkONnCdZFgs6xBeeHnFozW0wTy7oSSDosZr7Qhl/qLk8vsZFhtps5aHxYOBi4vfb1xD/S+0C0oyKL6Q1yiO7iHglsBlbgesUWL5byUeJtSb3xLmuY05h8V3A0fTeQBz1RwP1TTeyW9QLG2K1TomW0Uos+zNMrEm69fb3LW6lrg3d+QQFk/hxdcs5jrGSlLWg5h70PVOjCler3iLTV27fwP2anlYrIPjoSSDogOjYbHCIKHeXULndXeGRUmSQTEjl0Uo84qSy3/CsNhIx/D8zR2Gxfh8jqIkg6IDY2l7Rihzd8rd3HJKpO96oc1du/cAtxsWDYqSVEdQVDqTYoo3t+wNrGVz125z4HHDokFRkqoOig6MaU2KKV6v+KBNnYTVgBsMiwZFSTIo5mPHloRFr1dMw3bAbMNiNL6ZRU3jHG9QVM1+FqncY0su/37DYmNNjzz4e2RRMijKoKiAYkyIJ5Zc/rt03igT2pU2dxKmAM8aFp1UJSl2UPTxOOlOiGUn6xjvqN4N+IjNnYR+w6IkKXZQVLPDYox1Os+mTiosxmRYlKSWB0WPKIZ1YIQylzQwwCrtHRTDoiQZFBXB+ZGCwFtKlrGLYdGwaFgcldcoSjIoDuMRxTwm7Z+WXP4nkb7r5Ta3YbFBYdGjnpIMigbFbCecFK9XfDuwks1tWByn6YnW3zN2ITWMc7xBUQnbqyVh8Umb2rA4TrOBVZ1Upei8nMKgqIRdEqncK0ouv0Ki4UHtCotPAC9LrN7sx2qahVaBQVHtm7B3B5Yrsfw84FInWfteAu39COVv1Fqa5cf5/xfZbSQZFNWECXt+yeXfHem7ftLmNiyO07XAoZHWb7zXHC6xy0gyKKoOMR6MnOL1ip+zqQ2LPTgb+FQC6+f1XJIMisN48XY1ngVOa0lY9BS0YbHXnYyP1bx+i+0qapgpVoFBUfk4KlK5Z5Rc/h9aFBYnGRajeTBAGacCX6sxLBoU1TQeDDIoluaplvwn68NKLv8b4L9aEhYX2f+iWQv4QYByPgQcWVNYXA6pWeZZBQZFOVmHCGW7R/quX7K5WxUW9wDuDVDO6cBnawiLvplFkkFxGI8o1iPGmylSvF7xUHdwWhcWXwHcGKCcmXRORVcZFh+1a0gyKBoUUzAb+F1LwqLXfbUvLL4BuClAOR8DZkUMi8sO+zuv51LTOMcbFJWxTSOVe36CAcI7odsXFrcizJ3+b44YFp8d9udf2CUkGRTV9In6gABl3NHQsDjJLldpWDwCuChQWLwu0joO0jldDrCt3UGSQfGFPCzdzIm6bCjbJNJ3Pdfmbl1YfC/w+QDl7AT8LdI63gu8FrjBrqCG8XIKg6Ia4l0JhsUY4eEgYHW3odaFxU8Q5saUdSOu4x3EO2op1WWiVWBQdG+jGf4TeKwlYbHOO0tXtKvVFhaPBE5IfB13sAtIMigqVbGOtJV9CHKMybOu6xW91KLeIDYTODbxdZQkg2IXjyg2f5Leo+TyP4/0XesIiwbF+oPYicDhhkXJMU95BEW1Y5JO8RQ0VH9zy0K7VxJB7HTgw4ZFSTIoqje7tCQsHgSs6t51K8Pil4E9DYuSY54Mihq/nwC/b0lYfMzmbm1YvATY37AoSekGRfc20vW6SOUeUnL5/SOsU1XXK3pNbnpB7Gt0XvlnWJSkBIOi2jdBn1Vy+W9ECna+5q+9YfFGYHvDouTOsdILinOs1lZO0IMJ9kWA4yLXpUfQ0w1is4CNDIuSlN7krPRtnmBYjDEhHx95onfvOu0gdiewsmFRkgyKGp/b6ZyeC+3JBCfkJTZ3q8PiE8DLDIuSZFDU+GwbocyVgN1LlrFbhPWKdb2ip57zCIt/D9TfDYuSDIpyci7pipLLXx2gjCrDovIIi78E1jIsSpJBUfVPfGVD2R6RvutpNnerw+KDgco3LEoyKKpVtkwwLMaYjI8AXmVztzosLslgHaVUeQOfQbG0xVZrln4dqdwUw+Ifbe7Wh8VBYD3DoiRVHxSXt1qdmIf5ZoLrFep6xbXsNtmGxfsyWEcpNXOtAoNijp1ook2Z9MS8b4Ay/pRoWHzGLpN1WBzMYB2llLwm0/Ve06ZLJyiuWsP38HR3+hNz2Qn51YnW1VN2F8OiYVEtcmem6/13my6doHiJ1doIO0Uo83dOxADcXXL5CwyLhkWpJldbBS0beKfN2MZakCRJ0ov4eBxJkiQZFCVJkmRQlCRJkkFRkiRJBkVJkiQZFCVJkmRQlCRJkkFRkiRJBkVJkiQZFCVJkmRQlCRJkkFRkiRJBkVJkiTJoChJkiSDoiRJkgyKkiRJMihKkiTJoChJkiSDoiRJkpLyf8nthmLy4y2iAAAAAElFTkSuQmCC" alt="RKPT TECH LTD logo">
+      <span class="logo-word">RKPT TECH LTD</span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#business-services">Business Services</a>
+      <a href="#technology">Technology</a>
+      <a href="#hubs">Global Hubs</a>
+      <a href="#industries">Industries</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <span class="nav-phone">+44 (0) 20 0000 0000</span>
+      <a href="#contact" class="btn btn-primary" style="padding:10px 18px;font-size:.8rem">Contact</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#business-services">Business Services</a>
+    <a href="#technology">Technology</a>
+    <a href="#hubs">Global Hubs</a>
+    <a href="#industries">Industries</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<main id="home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-inner">
+        <span class="eyebrow">Official Business &amp; Technology Partner</span>
+        <h1>Build Your Business.<span class="line-outline">Transform. Protect. Grow.</span></h1>
+        <p class="lead">RKPT TECH LTD helps individuals, entrepreneurs, startups and established companies establish, operate and expand across international markets. We combine business setup, compliance, financial and immigration support with IT, AI, software and cybersecurity solutions.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+          <a href="#business-services" class="btn btn-outline">Explore Our Services</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="hero-photo" aria-hidden="true">
+          <svg viewBox="0 0 900 340" fill="none">
+            <g stroke="#3E5686" stroke-width="1">
+              <line x1="120" y1="90" x2="420" y2="170"/>
+              <line x1="420" y1="170" x2="700" y2="70"/>
+              <line x1="420" y1="170" x2="260" y2="270"/>
+              <line x1="420" y1="170" x2="640" y2="260"/>
+              <line x1="420" y1="170" x2="470" y2="60"/>
+              <line x1="260" y1="270" x2="150" y2="250"/>
+              <line x1="640" y1="260" x2="760" y2="230"/>
+            </g>
+            <g fill="#D62B2B"><circle cx="420" cy="170" r="7"/></g>
+            <g fill="#8FA0C4">
+              <circle cx="120" cy="90" r="4"/><circle cx="700" cy="70" r="4"/><circle cx="260" cy="270" r="4"/>
+              <circle cx="640" cy="260" r="4"/><circle cx="470" cy="60" r="4"/><circle cx="150" cy="250" r="4"/><circle cx="760" cy="230" r="4"/>
+            </g>
+          </svg>
+        </div>
+        <div class="hero-caption">
+          <span>One Global Partner. Seven Business Hubs.</span>
+          <span>Portugal · UK · Ireland · Switzerland · USA · UAE · India</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HUB QUICK LIST -->
+  <section class="tight band-alt">
+    <div class="wrap">
+      <div class="hub-quick">
+        <a class="hub-quick-row" href="#hubs"><div class="hub-quick-left"><span class="hub-flag">🇵🇹</span><div><h3>Portugal</h3><span class="hub-quick-tag">LDA · NHR · Golden Visa</span></div></div><span class="chev">→</span></a>
+        <a class="hub-quick-row" href="#hubs"><div class="hub-quick-left"><span class="hub-flag">🇬🇧</span><div><h3>United Kingdom</h3><span class="hub-quick-tag">UK LTD · Operations · Tech</span></div></div><span class="chev">→</span></a>
+        <a class="hub-quick-row" href="#hubs"><div class="hub-quick-left"><span class="hub-flag">🇮🇪</span><div><h3>Ireland</h3><span class="hub-quick-tag">LTD · CRO · EU Market Access</span></div></div><span class="chev">→</span></a>
+        <a class="hub-quick-row" href="#hubs"><div class="hub-quick-left"><span class="hub-flag">🇨🇭</span><div><h3>Switzerland</h3><span class="hub-quick-tag">GmbH · AG · Cantons</span></div></div><span class="chev">→</span></a>
+        <a class="hub-quick-row" href="#hubs"><div class="hub-quick-left"><span class="hub-flag">🇺🇸</span><div><h3>USA</h3><span class="hub-quick-tag">Formation · Banking · Tech</span></div></div><span class="chev">→</span></a>
+        <a class="hub-quick-row" href="#hubs"><div class="hub-quick-left"><span class="hub-flag">🇦🇪</span><div><h3>Dubai / UAE</h3><span class="hub-quick-tag">Licensing · Banking · Ops</span></div></div><span class="chev">→</span></a>
+        <a class="hub-quick-row" href="#hubs"><div class="hub-quick-left"><span class="hub-flag">🇮🇳</span><div><h3>India</h3><span class="hub-quick-tag">Technology &amp; Delivery Hub</span></div></div><span class="chev">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRATEGIC GEOGRAPHIES -->
+  <section id="hubs">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Strategic Geographies</span>
+        <h2>Global business hubs</h2>
+        <p>RKPT maintains direct business, compliance and technology capabilities across seven strategic international gateways.</p>
+        <a class="view-all" href="#contact">Discuss your target jurisdiction →</a>
+      </div>
+      <div class="hub-cards">
+
+        <div class="hub-card">
+          <div class="hub-card-top"><span class="hub-card-flag">🇵🇹</span><span class="hub-card-tag mono">WET · UTC+0</span></div>
+          <div><h3>Portugal</h3><span class="hub-role">EU Business &amp; Company Formation Hub</span></div>
+          <div class="hub-kv">
+            <div class="hub-kv-row"><span class="k">Legal form</span><span class="v">LDA</span></div>
+            <div class="hub-kv-row"><span class="k">Focus</span><span class="v">Setup · Tax · Banking · Immigration</span></div>
+          </div>
+          <div class="hub-card-footer"><span class="cities mono">LISBON · PORTO</span><a class="details" href="#contact">Details →</a></div>
+        </div>
+
+        <div class="hub-card">
+          <div class="hub-card-top"><span class="hub-card-flag">🇬🇧</span><span class="hub-card-tag mono">GMT · UTC+0</span></div>
+          <div><h3>United Kingdom</h3><span class="hub-role">UK Business &amp; Technology Hub</span></div>
+          <div class="hub-kv">
+            <div class="hub-kv-row"><span class="k">Legal form</span><span class="v">UK LTD</span></div>
+            <div class="hub-kv-row"><span class="k">Focus</span><span class="v">Setup · Operations · Technology</span></div>
+          </div>
+          <div class="hub-card-footer"><span class="cities mono">LONDON</span><a class="details" href="#contact">Details →</a></div>
+        </div>
+
+        <div class="hub-card">
+          <div class="hub-card-top"><span class="hub-card-flag">🇮🇪</span><span class="hub-card-tag mono">GMT · UTC+0</span></div>
+          <div><h3>Ireland</h3><span class="hub-role">EU Business &amp; Technology Hub</span></div>
+          <div class="hub-kv">
+            <div class="hub-kv-row"><span class="k">Legal form</span><span class="v">LTD</span></div>
+            <div class="hub-kv-row"><span class="k">Focus</span><span class="v">CRO Setup · EU Market Access</span></div>
+          </div>
+          <div class="hub-card-footer"><span class="cities mono">DUBLIN</span><a class="details" href="#contact">Details →</a></div>
+        </div>
+
+        <div class="hub-card">
+          <div class="hub-card-top"><span class="hub-card-flag">🇨🇭</span><span class="hub-card-tag mono">CET · UTC+1</span></div>
+          <div><h3>Switzerland</h3><span class="hub-role">Swiss Business Hub</span></div>
+          <div class="hub-kv">
+            <div class="hub-kv-row"><span class="k">Legal form</span><span class="v">GmbH / AG</span></div>
+            <div class="hub-kv-row"><span class="k">Focus</span><span class="v">Cantonal Compliance · Banking</span></div>
+          </div>
+          <div class="hub-card-footer"><span class="cities mono">ZURICH · GENEVA</span><a class="details" href="#contact">Details →</a></div>
+        </div>
+
+        <div class="hub-card">
+          <div class="hub-card-top"><span class="hub-card-flag">🇺🇸</span><span class="hub-card-tag mono">EST · UTC-5</span></div>
+          <div><h3>USA</h3><span class="hub-role">North American Business Hub</span></div>
+          <div class="hub-kv">
+            <div class="hub-kv-row"><span class="k">Legal form</span><span class="v">US Entity</span></div>
+            <div class="hub-kv-row"><span class="k">Focus</span><span class="v">Formation · Banking · Technology</span></div>
+          </div>
+          <div class="hub-card-footer"><span class="cities mono">REMOTE-FIRST</span><a class="details" href="#contact">Details →</a></div>
+        </div>
+
+        <div class="hub-card">
+          <div class="hub-card-top"><span class="hub-card-flag">🇦🇪</span><span class="hub-card-tag mono">GST · UTC+4</span></div>
+          <div><h3>Dubai / UAE</h3><span class="hub-role">Middle East Business Hub</span></div>
+          <div class="hub-kv">
+            <div class="hub-kv-row"><span class="k">Legal form</span><span class="v">Free Zone / Mainland</span></div>
+            <div class="hub-kv-row"><span class="k">Focus</span><span class="v">Licensing · Banking · Operations</span></div>
+          </div>
+          <div class="hub-card-footer"><span class="cities mono">DUBAI</span><a class="details" href="#contact">Details →</a></div>
+        </div>
+
+        <div class="hub-card">
+          <div class="hub-card-top"><span class="hub-card-flag">🇮🇳</span><span class="hub-card-tag mono">IST · UTC+5:30</span></div>
+          <div><h3>India</h3><span class="hub-role">Technology &amp; Delivery Hub</span></div>
+          <div class="hub-kv">
+            <div class="hub-kv-row"><span class="k">Focus</span><span class="v">Software · IT · AI · Cybersecurity</span></div>
+          </div>
+          <div class="hub-card-footer"><span class="cities mono">DELIVERY HUB</span><a class="details" href="#contact">Details →</a></div>
+        </div>
+
+      </div>
+      <p class="hub-note" style="margin-top:22px;font-size:.84rem;color:var(--slate);font-style:italic;">Fees, processing times and jurisdiction-specific requirements vary and are confirmed during consultation.</p>
+    </div>
+  </section>
+
+  <!-- BUSINESS SERVICES -->
+  <section id="business-services" class="band-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Integrated Capabilities</span>
+        <h2>Core business practice areas</h2>
+        <p>From company formation to ongoing compliance and international expansion, we help clients establish and operate businesses with a clear, structured approach.</p>
+      </div>
+      <div class="practice-list" id="businessServices">
+
+        <div class="practice-item">
+          <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="9" width="16" height="11"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg></div>
+          <div class="practice-content">
+            <h3>Company Formation &amp; Business Setup</h3>
+            <p>Business structure consultation, registration and incorporation, registered office support, licences and permits, VAT and tax identification, statutory filings and local representation where required.</p>
+            <button class="practice-toggle" aria-expanded="false">View specifications +</button>
+            <div class="practice-body"><ul>
+              <li>Business structure consultation</li><li>Company registration and incorporation</li>
+              <li>Shareholder and director documentation</li><li>Registered office support</li>
+              <li>Business licences and permits</li><li>VAT registration and tax identification</li>
+              <li>Articles of association and statutory filings</li><li>Local representation where required</li>
+            </ul></div>
+          </div>
+        </div>
+
+        <div class="practice-item">
+          <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 7v2h18V7z"/><path d="M5 9v9M10 9v9M14 9v9M19 9v9"/><path d="M3 20h18"/></svg></div>
+          <div class="practice-content">
+            <h3>Legal, Regulatory &amp; Compliance Support</h3>
+            <p>Regulatory coordination, statutory filings, company secretarial support, regulatory monitoring and risk advisory, with coordination to qualified professionals where regulated legal advice is required.</p>
+            <button class="practice-toggle" aria-expanded="false">View specifications +</button>
+            <div class="practice-body"><ul>
+              <li>Regulatory requirements and compliance coordination</li><li>Statutory filings and company secretarial support</li>
+              <li>Regulatory monitoring</li><li>Risk and compliance advisory</li>
+              <li>Coordination with appropriately qualified professionals where regulated legal advice is required</li>
+            </ul></div>
+          </div>
+        </div>
+
+        <div class="practice-item">
+          <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/><path d="M7 14h2M11 14h2M15 14h2M7 17h2M11 17h2"/></svg></div>
+          <div class="practice-content">
+            <h3>Accounting &amp; Tax</h3>
+            <p>Bookkeeping, financial reporting, payroll, corporate tax compliance, VAT returns, tax planning, double-taxation treaty guidance and tax authority representation where applicable.</p>
+            <button class="practice-toggle" aria-expanded="false">View specifications +</button>
+            <div class="practice-body"><ul>
+              <li>Bookkeeping and ledger management</li><li>Monthly, quarterly and annual financial reporting</li>
+              <li>Payroll management</li><li>Expense and invoice processing</li>
+              <li>Audit preparation support</li><li>Corporate tax compliance</li>
+              <li>VAT returns and reporting</li><li>Tax planning and efficiency support</li>
+              <li>Double-taxation treaty guidance</li><li>Tax authority representation / coordination where applicable</li>
+            </ul></div>
+          </div>
+        </div>
+
+        <div class="practice-item">
+          <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10h18M5 10v9M19 10v9M3 19h18M12 3 3 10h18z"/></svg></div>
+          <div class="practice-content">
+            <h3>Business Banking &amp; Payments</h3>
+            <p>Bank selection, documentation preparation, liaison with traditional and digital banks, FinTech/EMI setup, payment gateway and merchant account support, and ongoing compliance support.</p>
+            <button class="practice-toggle" aria-expanded="false">View specifications +</button>
+            <div class="practice-body"><ul>
+              <li>Bank selection based on business profile</li><li>Corporate and personal account application support</li>
+              <li>Documentation preparation</li><li>Liaison with traditional and digital banks</li>
+              <li>FinTech and EMI account setup support</li><li>Payment gateway and merchant account support</li>
+              <li>Ongoing banking compliance support</li>
+            </ul></div>
+          </div>
+        </div>
+
+        <div class="practice-item">
+          <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 12h18"/></svg></div>
+          <div class="practice-content">
+            <h3>Immigration &amp; Relocation</h3>
+            <p>Business, entrepreneur and investor visa support, work and residence permits, family reunification, renewals, and relocation support including registration, social security and healthcare enrolment.</p>
+            <button class="practice-toggle" aria-expanded="false">View specifications +</button>
+            <div class="practice-body"><ul>
+              <li>Business and entrepreneur visa support</li><li>Investor and startup programme support</li>
+              <li>Work and residence permit support</li><li>Family reunification support</li>
+              <li>Renewals and permanent residence support</li><li>Citizenship advisory where applicable</li>
+              <li>Address registration</li><li>Social security registration</li>
+              <li>Healthcare enrolment</li><li>Local compliance orientation</li>
+            </ul></div>
+          </div>
+        </div>
+
+        <div class="practice-item">
+          <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5M4 19h16M8 15l3-4 3 3 4-6"/></svg></div>
+          <div class="practice-content">
+            <h3>Business Consulting &amp; Advisory</h3>
+            <p>Business plan development, market-entry strategy, feasibility studies, financial modelling, investor pitch decks, virtual office services, and EU market compliance consulting.</p>
+            <button class="practice-toggle" aria-expanded="false">View specifications +</button>
+            <div class="practice-body"><ul>
+              <li>Business plan development</li><li>Market-entry strategy</li>
+              <li>Feasibility studies</li><li>Financial modelling</li>
+              <li>Investor pitch decks</li><li>Virtual office services</li>
+              <li>Business expansion advisory</li><li>EU market compliance consulting</li>
+            </ul></div>
+          </div>
+        </div>
+
+      </div>
+      <div class="practice-cta"><a href="#contact" class="btn btn-outline">Tell Us What You Need</a></div>
+    </div>
+  </section>
+
+  <!-- TECHNOLOGY SERVICES -->
+  <section id="technology">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Technology Solutions</span>
+        <h2>Core technology capabilities</h2>
+        <p>Technology should make your business easier to operate, more secure and more scalable. We design practical digital solutions around your business requirements.</p>
+      </div>
+      <div class="practice-list" id="techServices">
+
+        <div class="practice-item">
+          <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div>
+          <div class="practice-content">
+            <h3>IT Support &amp; Managed IT</h3>
+            <p>Business IT support, user and device support, Microsoft/cloud environment support, systems support and ongoing technical maintenance.</p>
+            <button class="practice-toggle" aria-expanded="false">View specifications +</button>
+            <div class="practice-body"><ul>
+              <li>Business IT support</li><li>User and device support</li>
+              <li>Microsoft / cloud environment support</li><li>Business systems support</li>
+              <li>IT troubleshooting and maintenance</li><li>Ongoing technical support</li>
+            </ul></div>
+          </div>
+        </div>
+
+        <div class="practice-item">
+          <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg></div>
+          <div class="practice-content">
+            <h3>AI Integration</h3>
+            <p>AI readiness assessment, workflow integration, productivity solutions, document and knowledge automation, and customer-service AI, monitored and improved on an ongoing basis.</p>
+            <button class="practice-toggle" aria-expanded="false">View specifications +</button>
+            <div class="practice-body">
+              <ul><li>AI readiness assessment</li><li>AI integration into business workflows</li>
+              <li>AI-powered productivity solutions</li><li>Document and knowledge automation</li>
+              <li>Customer-service and internal AI solutions</li><li>AI workflow monitoring and improvement</li></ul>
+              <p class="approach-line">Assess → Design → Integrate → Automate → Monitor</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="practice-item">
+          <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M13 6l-2 12"/></svg></div>
+          <div class="practice-content">
+            <h3>Software Development</h3>
+            <p>Custom business software, web and mobile applications, business platforms, secure authentication, API integrations, and cloud or on-premise deployment.</p>
+            <button class="practice-toggle" aria-expanded="false">View specifications +</button>
+            <div class="practice-body">
+              <ul><li>Custom business software</li><li>Web applications</li><li>Mobile applications</li>
+              <li>Business platforms</li><li>Secure authentication</li><li>API and system integrations</li>
+              <li>Cloud and on-premise solutions</li></ul>
+              <p class="approach-line">Discover → Design → Develop → Test → Deploy → Support</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="practice-item">
+          <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18z"/></svg></div>
+          <div class="practice-content">
+            <h3>Website &amp; Digital Solutions</h3>
+            <p>Corporate websites, business landing pages, multilingual and GDPR-aware design, SEO-ready architecture, and ongoing maintenance and support.</p>
+            <button class="practice-toggle" aria-expanded="false">View specifications +</button>
+            <div class="practice-body"><ul>
+              <li>Corporate websites</li><li>Business landing pages</li><li>Multilingual websites</li>
+              <li>GDPR-aware design</li><li>SEO-ready architecture</li><li>Website maintenance and support</li>
+            </ul></div>
+          </div>
+        </div>
+
+        <div class="practice-item">
+          <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/></svg></div>
+          <div class="practice-content">
+            <h3>ERP &amp; CRM Solutions</h3>
+            <p>Custom ERP systems, CRM integration, accounting and finance integration, HR and payroll systems, and supply-chain and inventory systems.</p>
+            <button class="practice-toggle" aria-expanded="false">View specifications +</button>
+            <div class="practice-body"><ul>
+              <li>Custom ERP systems</li><li>CRM integration</li><li>Accounting and finance integration</li>
+              <li>HR and payroll systems</li><li>Business process systems</li>
+              <li>Supply-chain and inventory systems</li><li>Cloud-based and on-premise solutions</li>
+            </ul></div>
+          </div>
+        </div>
+
+        <div class="practice-item">
+          <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10a6 6 0 0 0-11.9-1A4.5 4.5 0 0 0 6.5 18H18a4 4 0 0 0 0-8Z"/></svg></div>
+          <div class="practice-content">
+            <h3>Cloud Solutions</h3>
+            <p>Cloud setup and migration, business productivity environments, infrastructure support, backup and recovery, and access and identity management.</p>
+            <button class="practice-toggle" aria-expanded="false">View specifications +</button>
+            <div class="practice-body"><ul>
+              <li>Cloud setup and migration</li><li>Business productivity environments</li>
+              <li>Cloud infrastructure support</li><li>Backup and recovery</li><li>Access and identity management</li>
+            </ul></div>
+          </div>
+        </div>
+
+        <div class="practice-item">
+          <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v6h6M20 20v-6h-6"/><path d="M4.5 15a8 8 0 0 0 14.9 2M19.5 9a8 8 0 0 0-14.9-2"/></svg></div>
+          <div class="practice-content">
+            <h3>Business Automation</h3>
+            <p>Workflow automation, approval processes, document automation, CRM/ERP workflows, reporting automation and integration between business systems.</p>
+            <button class="practice-toggle" aria-expanded="false">View specifications +</button>
+            <div class="practice-body"><ul>
+              <li>Workflow automation</li><li>Approval processes</li><li>Document automation</li>
+              <li>CRM and ERP workflows</li><li>Reporting automation</li><li>Integration between business systems</li>
+            </ul></div>
+          </div>
+        </div>
+
+        <div class="practice-item">
+          <div class="practice-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/></svg></div>
+          <div class="practice-content">
+            <h3>Cybersecurity</h3>
+            <p>Security assessment, endpoint and network protection, identity and access controls, backup and recovery planning, monitoring and incident-response coordination.</p>
+            <button class="practice-toggle" aria-expanded="false">View specifications +</button>
+            <div class="practice-body">
+              <ul><li>Security assessment</li><li>Endpoint and network protection</li>
+              <li>Identity and access controls</li><li>Backup and recovery planning</li>
+              <li>Security monitoring</li><li>Security awareness support</li><li>Incident-response coordination</li></ul>
+              <p class="approach-line">Assess → Protect → Monitor → Respond → Improve</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="practice-cta"><a href="#contact" class="btn btn-outline">Discuss Your Technology Requirements</a></div>
+    </div>
+  </section>
+
+  <!-- BLUEPRINT TOOL -->
+  <section class="band-alt" id="blueprint">
+    <div class="wrap">
+      <div class="blueprint-grid">
+        <div>
+          <span class="eyebrow">Interactive Planning</span>
+          <h2>Outline your expansion blueprint</h2>
+          <p style="margin-top:16px;color:var(--slate);font-size:1rem;">Select your target hub, your business type and your primary focus area. We'll put together a starting checklist of the services relevant to your plan — a real consultation confirms scope, timeline and cost.</p>
+          <ul class="checklist">
+            <li>Draws only on our published service list</li>
+            <li>No fees or timelines generated automatically</li>
+            <li>Reviewed and confirmed by our team directly</li>
+          </ul>
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+          </div>
+        </div>
+        <div class="blueprint-card">
+          <div class="field">
+            <label for="bpHub">Target hub</label>
+            <select id="bpHub">
+              <option>Portugal</option><option>United Kingdom</option><option>Ireland</option>
+              <option>Switzerland</option><option>USA</option><option>Dubai / UAE</option><option>India</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="bpType">You are</label>
+            <select id="bpType"><option>An individual / entrepreneur</option><option>An existing business</option></select>
+          </div>
+          <div class="field">
+            <label for="bpNeed">Primary focus</label>
+            <select id="bpNeed">
+              <option value="formation">Company formation</option>
+              <option value="banking">Banking &amp; payments</option>
+              <option value="immigration">Immigration &amp; relocation</option>
+              <option value="tech">Technology &amp; digital</option>
+              <option value="full">Full setup — business + technology</option>
+            </select>
+          </div>
+          <button class="btn btn-primary" style="width:100%" id="bpGenerate">Generate My Blueprint</button>
+          <div class="blueprint-result" id="bpResult"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="band-dark tight">
+    <div class="wrap">
+      <div class="stats-grid">
+        <div class="stat-item"><div class="num mono">7</div><div class="cap">Global Business Hubs</div></div>
+        <div class="stat-item"><div class="num mono">14</div><div class="cap">Integrated Service Areas</div></div>
+        <div class="stat-item"><div class="num mono">10</div><div class="cap">Stage Client Journey</div></div>
+        <div class="stat-item"><div class="num mono">1</div><div class="cap">Dedicated Operating Partner</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY -->
+  <section class="band-dark">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">From Setup to Growth</span>
+        <h2>An end-to-end path, start to finish</h2>
+      </div>
+      <div class="journey-grid">
+        <div class="journey-step"><span class="jnum">01</span><h4>Discover</h4><p>Understand your goals, business model and target market.</p></div>
+        <div class="journey-step"><span class="jnum">02</span><h4>Assess</h4><p>Review country, structure, operational, compliance and technology requirements.</p></div>
+        <div class="journey-step"><span class="jnum">03</span><h4>Plan</h4><p>Create a practical business and implementation roadmap.</p></div>
+        <div class="journey-step"><span class="jnum">04</span><h4>Establish</h4><p>Support company setup, registration, banking, immigration and related requirements.</p></div>
+        <div class="journey-step"><span class="jnum">05</span><h4>Connect</h4><p>Coordinate accounting, tax, compliance and operational services.</p></div>
+        <div class="journey-step"><span class="jnum">06</span><h4>Digitise</h4><p>Build websites, software, cloud systems and business technology.</p></div>
+        <div class="journey-step"><span class="jnum">07</span><h4>Integrate AI</h4><p>Identify and implement practical AI and automation opportunities.</p></div>
+        <div class="journey-step"><span class="jnum">08</span><h4>Protect</h4><p>Strengthen cybersecurity, access, backup and operational resilience.</p></div>
+        <div class="journey-step"><span class="jnum">09</span><h4>Support</h4><p>Provide ongoing technology, compliance and business support.</p></div>
+        <div class="journey-step"><span class="jnum">10</span><h4>Expand</h4><p>Support international growth and entry into additional markets.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY RKPT -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Why Choose RKPT</span>
+        <h2>A single, accountable operating partner</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-item"><h4>Global</h4><p>Seven business hubs across Europe, the UK, USA, UAE and India.</p></div>
+        <div class="why-item"><h4>Integrated</h4><p>Business, financial, compliance, immigration and technology support in one ecosystem.</p></div>
+        <div class="why-item"><h4>End-to-end</h4><p>From initial consultation through setup, implementation and ongoing support.</p></div>
+        <div class="why-item"><h4>Technology-driven</h4><p>Practical IT, AI, software, cloud, automation and cybersecurity solutions.</p></div>
+        <div class="why-item"><h4>Multi-disciplinary</h4><p>Business and technology capabilities designed to work together.</p></div>
+        <div class="why-item"><h4>International</h4><p>Support for clients operating across multiple jurisdictions.</p></div>
+        <div class="why-item"><h4>Compliance-focused</h4><p>Structured around applicable local and EU requirements.</p></div>
+        <div class="why-item"><h4>Transparent</h4><p>Clear processes, clear communication and transparent service scope.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO WE SERVE -->
+  <section id="industries" class="band-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Who We Serve</span>
+        <h2>Built for businesses at every stage</h2>
+      </div>
+      <div class="serve-grid">
+        <div class="serve-item"><span class="mark"></span>Individuals and entrepreneurs</div>
+        <div class="serve-item"><span class="mark"></span>Startups and founders</div>
+        <div class="serve-item"><span class="mark"></span>Small and medium-sized businesses</div>
+        <div class="serve-item"><span class="mark"></span>Established companies</div>
+        <div class="serve-item"><span class="mark"></span>International companies</div>
+        <div class="serve-item"><span class="mark"></span>Investors</div>
+        <div class="serve-item"><span class="mark"></span>IT and SaaS businesses</div>
+        <div class="serve-item"><span class="mark"></span>Professional services firms</div>
+        <div class="serve-item"><span class="mark"></span>Manufacturing and trading businesses</div>
+        <div class="serve-item"><span class="mark"></span>Healthcare and life sciences</div>
+        <div class="serve-item"><span class="mark"></span>Hospitality and tourism</div>
+        <div class="serve-item"><span class="mark"></span>FinTech and technology businesses</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">About RKPT TECH LTD</span>
+        <h2>One partner for business and technology</h2>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p>RKPT TECH LTD is a global business consulting and technology solutions firm specializing in helping entrepreneurs, startups and established companies establish, expand and operate businesses across international markets.</p>
+          <p>Our integrated approach combines business, financial, administrative, compliance and IT solutions so clients can focus on growth while we help manage complexity, compliance and operational efficiency.</p>
+          <p><strong>Vision.</strong> To become a trusted global partner for businesses entering and expanding into international markets by delivering transparent, compliant and technology-driven solutions that enable sustainable growth.</p>
+          <ul class="mission-list">
+            <li>Simplify cross-border business setup and operations.</li>
+            <li>Deliver accurate, compliant and customized consulting services.</li>
+            <li>Empower businesses through innovative IT and digital solutions.</li>
+            <li>Build long-term partnerships based on trust, performance and results.</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="values-list">
+            <li><b>Integrity &amp; Compliance</b> — We operate within applicable local and EU requirements.</li>
+            <li><b>Client-Centric Approach</b> — Solutions are tailored to the client's business needs.</li>
+            <li><b>Expertise &amp; Precision</b> — Work is structured around experienced professional capabilities.</li>
+            <li><b>Innovation</b> — We use technology to improve business operations.</li>
+            <li><b>Transparency</b> — Clear processes, communication and service scope.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST / TESTIMONIAL PLACEHOLDER -->
+  <section class="band-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Executive Client Success</span>
+        <h2>Trusted by international founders and operators</h2>
+      </div>
+      <div class="trust-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">Client testimonials will appear here once available — replace this placeholder with a direct quote and attribution from a consenting client.</p>
+        <p class="who">CLIENT NAME · ROLE · LOCATION (TO BE ADDED)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="wrap">
+      <span class="eyebrow">Ready To Expand?</span>
+      <h2>Let's build your business infrastructure</h2>
+      <p>Whether you are starting a company, expanding into a new market, improving your operations or strengthening your technology and cybersecurity, RKPT TECH LTD can help you plan the next step.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+        <a href="#contact" class="btn btn-outline-white">Request a Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap contact-wrap">
+      <div>
+        <div class="section-head" style="margin-bottom:28px;">
+          <span class="eyebrow">Start Your Consultation</span>
+          <h2>Tell us about your business</h2>
+        </div>
+        <form class="enquiry" onsubmit="event.preventDefault(); alert('Thank you — your enquiry has been recorded. This form is not yet connected to CRM/email delivery.');">
+          <div class="field"><label for="fname">Full Name</label><input id="fname" type="text" required></div>
+          <div class="field"><label for="fcompany">Company Name</label><input id="fcompany" type="text"></div>
+          <div class="field"><label for="femail">Email</label><input id="femail" type="email" required></div>
+          <div class="field"><label for="fphone">Phone / WhatsApp</label><input id="fphone" type="tel"></div>
+          <div class="field"><label for="fcurrent">Current Country</label><input id="fcurrent" type="text"></div>
+          <div class="field"><label for="ftarget">Target Country / Hub</label>
+            <select id="ftarget">
+              <option>Portugal</option><option>UK</option><option>Ireland</option><option>Switzerland</option>
+              <option>USA</option><option>Dubai / UAE</option><option>India</option><option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field"><label for="ftype">Individual or Business</label>
+            <select id="ftype"><option>Individual</option><option>Business</option></select>
+          </div>
+          <div class="field"><label for="fservice">Service Required</label>
+            <select id="fservice">
+              <option>Company Formation</option><option>Accounting &amp; Tax</option><option>Banking &amp; Payments</option>
+              <option>Legal &amp; Compliance</option><option>Immigration</option><option>IT Support</option>
+              <option>AI Integration</option><option>Software Development</option><option>Cybersecurity</option>
+              <option>International Expansion</option>
+            </select>
+          </div>
+          <div class="field full"><label for="findustry">Business Type / Industry</label><input id="findustry" type="text"></div>
+          <div class="field full"><label for="fdesc">Brief Description of Requirement</label><textarea id="fdesc" rows="4"></textarea></div>
+          <div class="field"><label for="fcontact">Preferred Contact Method</label>
+            <select id="fcontact"><option>Email</option><option>Phone</option><option>WhatsApp</option></select>
+          </div>
+          <div class="field"><label for="fdate">Preferred Consultation Date/Time</label><input id="fdate" type="datetime-local"></div>
+          <div class="field checkbox full">
+            <input id="fconsent" type="checkbox" required>
+            <label for="fconsent">I agree to the Privacy Policy and consent to RKPT TECH LTD processing my information to respond to this enquiry.</label>
+          </div>
+          <div class="form-submit"><button type="submit" class="btn btn-primary">Submit Enquiry</button></div>
+        </form>
+      </div>
+      <div class="contact-direct">
+        <h3>Direct contact</h3>
+        <div class="direct-list">
+          <a href="mailto:info@rkpttech.com">Email <span>→</span></a>
+          <a href="tel:+000000000">Phone <span>→</span></a>
+          <a href="https://wa.me/">WhatsApp <span>→</span></a>
+          <a href="#contact">Book Online <span>→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <img class="flogo-mark" src="data:image/png;base64,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" alt="RKPT TECH LTD logo">
+      <p class="footer-desc">RKPT TECH LTD is a global business consulting and technology solutions firm helping entrepreneurs, startups and established companies establish, expand and operate businesses across international markets.</p>
+      <div class="badges"><span>GDPR-Aware Process</span><span>Multi-Jurisdiction Coverage</span></div>
+    </div>
+    <div class="footer-grid">
+      <div>
+        <h4>Business Services</h4>
+        <ul>
+          <li><a href="#business-services">Company Formation</a></li>
+          <li><a href="#business-services">Legal &amp; Compliance</a></li>
+          <li><a href="#business-services">Accounting &amp; Tax</a></li>
+          <li><a href="#business-services">Banking &amp; Payments</a></li>
+          <li><a href="#business-services">Immigration &amp; Relocation</a></li>
+          <li><a href="#business-services">Business Advisory</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Technology</h4>
+        <ul>
+          <li><a href="#technology">IT Support</a></li>
+          <li><a href="#technology">AI Integration</a></li>
+          <li><a href="#technology">Software Development</a></li>
+          <li><a href="#technology">Website &amp; Digital Solutions</a></li>
+          <li><a href="#technology">ERP &amp; CRM</a></li>
+          <li><a href="#technology">Cloud Solutions</a></li>
+          <li><a href="#technology">Business Automation</a></li>
+          <li><a href="#technology">Cybersecurity</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Global Hubs</h4>
+        <ul>
+          <li><a href="#hubs">Portugal</a></li>
+          <li><a href="#hubs">UK</a></li>
+          <li><a href="#hubs">Ireland</a></li>
+          <li><a href="#hubs">Switzerland</a></li>
+          <li><a href="#hubs">USA</a></li>
+          <li><a href="#hubs">Dubai / UAE</a></li>
+          <li><a href="#hubs">India</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="disclaimer">Information on this website is provided for general information and business-support purposes. Company-formation requirements, tax rules, immigration requirements, licensing conditions, banking requirements and regulatory obligations vary by jurisdiction, business activity and individual circumstances. Government authorities, banks and regulated institutions make their own decisions and may request additional documentation. Processing times are indicative only. Outcomes such as company registration, bank-account approval, tax registration, visa and immigration approval, and other third-party decisions rest solely with the relevant authority or institution. Where regulated legal, tax, accounting, immigration or other professional advice is required, RKPT TECH LTD may coordinate with appropriately qualified professionals. Read the full <a href="#">Legal Disclaimer</a>.</p>
+
+    <div class="bottom-row">
+      <div>
+        <a href="#about">About</a><a href="#business-services">Services</a><a href="#hubs">Global Hubs</a>
+        <a href="#">Privacy Policy</a><a href="#">Cookie Policy</a><a href="#">Terms</a><a href="#">Legal Disclaimer</a><a href="#contact">Contact</a>
+      </div>
+      <div>© RKPT TECH LTD. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<div class="float-cta">
+  <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+</div>
+
+<script>
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburgerBtn.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    hamburgerBtn.setAttribute('aria-expanded', isOpen);
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+    hamburgerBtn.setAttribute('aria-expanded', 'false');
+  }));
+
+  document.querySelectorAll('.practice-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.practice-item');
+      const nowOpen = !item.classList.contains('open');
+      item.classList.toggle('open');
+      btn.setAttribute('aria-expanded', nowOpen);
+      btn.textContent = nowOpen ? 'Hide specifications –' : 'View specifications +';
+    });
+  });
+
+  const BP_MAP = {
+    formation: ['Business structure consultation for the selected hub', 'Company registration and incorporation', 'Registered office and statutory filings'],
+    banking: ['Bank selection based on your business profile', 'Corporate account application support', 'FinTech / EMI and payment gateway setup'],
+    immigration: ['Business or entrepreneur visa assessment', 'Work / residence permit support', 'Relocation: address, social security and healthcare registration'],
+    tech: ['IT and cloud environment setup', 'Website or software development scoping', 'Cybersecurity baseline assessment'],
+    full: ['Business structure consultation and formation', 'Accounting, tax and banking coordination', 'Technology stack assessment (IT, cloud, cybersecurity)']
+  };
+  document.getElementById('bpGenerate').addEventListener('click', () => {
+    const hub = document.getElementById('bpHub').value;
+    const type = document.getElementById('bpType').value;
+    const need = document.getElementById('bpNeed').value;
+    const items = BP_MAP[need] || [];
+    const result = document.getElementById('bpResult');
+    result.innerHTML = `<h4>Starting checklist — ${hub}</h4><p style="margin-bottom:10px;">For ${type.toLowerCase()} focused on ${document.getElementById('bpNeed').selectedOptions[0].text.toLowerCase()}:</p><ul>${items.map(i => `<li>${i}</li>`).join('')}</ul><p style="margin-top:12px;">Scope, timeline and cost are confirmed in a consultation — <a href="#contact" style="color:var(--red);font-weight:600;">book yours here →</a></p>`;
+    result.classList.add('show');
+  });
+</script>
+
+</body>
+</html>
